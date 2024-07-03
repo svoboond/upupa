@@ -15,6 +15,7 @@ pacman_packages:
 - kitty
 - ranger
 - yay
+- ansible
 # desktop applications
 - firefox
 - vlc
