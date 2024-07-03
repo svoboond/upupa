@@ -1,4 +1,6 @@
 pacman_packages:
+- man-db
+- man-pages
 - bash-completion
 - gvim
 - git
@@ -7,11 +9,16 @@ pacman_packages:
 - make
 - gnu-netcat
 - net-tools
+- wget
+- curl
 - traceroute
 - htop
 - atop
 - strace
 - ltrace
+- openssh
+- sudo
+- pipewire
 - kitty
 - ranger
 - yay
