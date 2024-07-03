@@ -1,16 +1,5 @@
 ---
-- name: upgrade AUR packages
-  kewlfft.aur.aur:
-    update_cache: yes
-    upgrade: yes
-    use: yay
-    aur_only: yes
-- name: update flatpak packages
-  community.general.flatpak:
-    name: "{{ flatpak_packages }}"
-    state: latest
-- name: run "pacman -Syu"
-  become: true
-  community.general.pacman:
-    update_cache: true
-    upgrade: true
+- name: install requirements
+  delegate_to: localhost
+  ansible.builtin.command: ansible-galaxy collection install -r {{ role_path }}/meta/requirements.yaml
+- ansible.builtin.include_tasks: upgrade.yaml
