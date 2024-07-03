@@ -1,0 +1,5 @@
+desktops:
+  hosts:
+    localhost:
+      ansible_host: localhost
+      ansible_connection: local

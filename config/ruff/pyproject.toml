@@ -1,0 +1,22 @@
+[tool.ruff]
+line-length = 79
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.lint.isort]
+combine-as-imports = true
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+  "ANN101",
+  "COM812",
+  "C90",
+  "FBT",
+  "ISC001",
+  "PLR0912",
+  "PLR0915",
+  "SIM105",
+  "SIM108",
+]
