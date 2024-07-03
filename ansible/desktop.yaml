@@ -1,62 +1,11 @@
 - name: setup desktop
   hosts: desktops
+  roles:
+  - role: install_packages
+    tags: install
+  - role: upgrade_packages
+    tags: upgrade
+  - role: create_symlinks
+    tags: symlinks
   vars_files:
-    - inventory/desktop_vars.yaml
-  tasks:
-  - name: run "pacman -Sy"
-    become: true
-    community.general.pacman:
-      update_cache: true
-  - name: install pacman packages
-    become: true
-    community.general.pacman:
-      name: "{{ pacman_packages }}"
-  - name: add user to docker group
-    become: true
-    ansible.builtin.user:
-      name: "{{ ansible_user_id }}"
-      groups: docker
-      append: yes
-  - name: enable docker systemd service
-    become: true
-    ansible.builtin.systemd_service:
-      name: docker
-      enabled: true
-      masked: no
-  - name: install flatpak packages
-    community.general.flatpak:
-      name: "{{ flatpak_packages }}"
-  - name: install AUR packages
-    kewlfft.aur.aur:
-      use: yay
-      name: "{{ aur_packages }}"
-  - name: run "pacman -Syu"
-    become: true
-    community.general.pacman:
-      update_cache: true
-      upgrade: true
-  - name: upgrade AUR packages
-    kewlfft.aur.aur:
-      update_cache: yes
-      upgrade: yes
-      use: yay
-      aur_only: yes
-  - name: update flatpak packages
-    community.general.flatpak:
-      name: "{{ flatpak_packages }}"
-      state: latest
-  - name: create symbolic link - kitty
-    ansible.builtin.file:
-      src: "{{ lookup('env', 'PWD') }}/config/kitty"
-      dest: ~/.config/kitty
-      state: link
-  - name: create symbolic link - Neovim
-    ansible.builtin.file:
-      src: "{{ lookup('env', 'PWD') }}/config/nvim"
-      dest: ~/.config/nvim
-      state: link
-  - name: create symbolic link - Ruff
-    ansible.builtin.file:
-      src: "{{ lookup('env', 'PWD') }}/config/ruff"
-      dest: ~/.config/ruff
-      state: link
+  - group_vars/desktop.yaml

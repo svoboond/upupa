@@ -1,0 +1,70 @@
+pacman_packages:
+- bash-completion
+- gvim
+- git
+- tig
+- base-devel
+- gnu-netcat
+- net-tools
+- traceroute
+- htop
+- atop
+- strace
+- ltrace
+- kitty
+- ranger
+- yay
+# desktop applications
+- firefox
+- vlc
+- thunderbird
+- libreoffice-still
+- chromium
+- flatpak
+- signal-desktop
+# Docker
+- docker
+- docker-buildx
+- docker-compose
+# K8s
+- kubectl
+- helm
+- minikube
+# Python
+- python
+- python-pip
+# Go
+- go
+- gopls
+# Neovim
+- neovim
+- ripgrep
+- fd
+
+aur_packages:
+- skaffold-bin
+- kafkacat-git
+- neovim-plug
+
+flatpak_packages:
+- io.github.spacingbat3.webcord
+
+symlinks:
+- src: "{{ lookup('env', 'PWD') }}/dotfiles/kitty"
+  dest: ~/.config/kitty
+- src: "{{ lookup('env', 'PWD') }}/dotfiles/nvim"
+  dest: ~/.config/nvim
+- src: "{{ lookup('env', 'PWD') }}/dotfiles/ruff"
+  dest: ~/.config/ruff
+- src: "{{ lookup('env', 'PWD') }}/dotfiles/.bash_logout"
+  dest: ~/.bash_logout
+- src: "{{ lookup('env', 'PWD') }}/dotfiles/.bash_profile"
+  dest: ~/.bash_profile
+- src: "{{ lookup('env', 'PWD') }}/dotfiles/.bashrc"
+  dest: ~/.bashrc
+- src: "{{ lookup('env', 'PWD') }}/dotfiles/.inputrc"
+  dest: ~/.inputrc
+- src: "{{ lookup('env', 'PWD') }}/dotfiles/.profile"
+  dest: ~/.profile
+- src: "{{ lookup('env', 'PWD') }}/dotfiles/.gitignore_global"
+  dest: ~/.gitignore_global

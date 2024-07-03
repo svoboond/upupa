@@ -1,0 +1,16 @@
+---
+- name: upgrade AUR packages
+  kewlfft.aur.aur:
+    update_cache: yes
+    upgrade: yes
+    use: yay
+    aur_only: yes
+- name: update flatpak packages
+  community.general.flatpak:
+    name: "{{ flatpak_packages }}"
+    state: latest
+- name: run "pacman -Syu"
+  become: true
+  community.general.pacman:
+    update_cache: true
+    upgrade: true

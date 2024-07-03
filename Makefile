@@ -1,5 +1,13 @@
-.PHONY: ansible-run
+.PHONY: ansible-all ansible-install ansible-upgrade ansible-symlinks
 
-ansible-run:
-	ansible-galaxy install -r ansible/requirements.yaml
-	ansible-playbook -i ansible/inventory/inventory.yaml ansible/desktop.yaml -vvvvv
+ansible-all:
+	ansible-playbook -i ansible/inventory/desktop.yaml ansible/desktop.yaml -vvvvv
+
+ansible-install:
+	ansible-playbook -i ansible/inventory/desktop.yaml ansible/desktop.yaml -vvvvv --tag install
+
+ansible-upgrade:
+	ansible-playbook -i ansible/inventory/desktop.yaml ansible/desktop.yaml -vvvvv --tag upgrade
+
+ansible-symlinks:
+	ansible-playbook -i ansible/inventory/desktop.yaml ansible/desktop.yaml -vvvvv --tag symlinks
