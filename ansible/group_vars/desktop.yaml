@@ -81,3 +81,9 @@ symlinks:
 private_host2vault:
 - src: ~/.gnupg
   dest: ""
+- src: ~/.ssh
+  dest: ""
+- src: ~/.kube
+  dest: ""
+- src: ~/.thunderbird
+  dest: ""
