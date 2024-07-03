@@ -21,6 +21,7 @@ pacman_packages:
 - libreoffice-still
 - chromium
 - flatpak
+- signal-desktop
 # Docker
 - docker
 - docker-buildx
