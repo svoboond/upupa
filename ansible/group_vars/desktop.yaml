@@ -4,6 +4,7 @@ pacman_packages:
 - git
 - tig
 - base-devel
+- make
 - gnu-netcat
 - net-tools
 - traceroute
