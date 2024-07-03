@@ -1,0 +1,5 @@
+# private
+.gnupg/
+.kube/
+.ssh/
+.thunderbird/
