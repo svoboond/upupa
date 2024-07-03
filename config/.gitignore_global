@@ -1,0 +1,12 @@
+# testing files
+bar.*
+foo.*
+hey.*
+# testing dir
+/foo_bar_hey/
+
+# Python
+__pycache__/
+*.py[cod]
+# Python virtual environment
+venv/
