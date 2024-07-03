@@ -7,5 +7,7 @@
     tags: upgrade
   - role: create_symlinks
     tags: symlinks
+  - role: private_host2vault
+    tags: host2vault
   vars_files:
   - group_vars/desktop.yaml

@@ -77,3 +77,7 @@ symlinks:
   dest: ~/.profile
 - src: "{{ lookup('env', 'PWD') }}/dotfiles/.gitignore_global"
   dest: ~/.gitignore_global
+
+private_host2vault:
+- src: ~/.gnupg
+  dest: ""

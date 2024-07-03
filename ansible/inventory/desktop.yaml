@@ -1,5 +1,4 @@
 desktops:
   hosts:
-    localhost:
-      ansible_host: localhost
+    local_machine:
       ansible_connection: local
