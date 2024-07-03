@@ -1,0 +1,27 @@
+---
+- name: error
+  ansible.builtin.fail:
+    msg: variable vault_path is required
+  when: vault_path == ""
+- name: backup host data
+  become: true
+  ansible.posix.synchronize:
+    src: "{{ item.dest }}/{{ item.src }}"
+    dest: "{{ item.dest }}/.vault2host.bak"
+    owner: true
+    group: true
+    recursive: true
+    delete: true
+  loop: "{{ vault2host }}"
+  when: vault_path != ""
+- name: copy vault to host
+  become: true
+  ansible.posix.synchronize:
+    src: "{{ vault_path }}/{{ item.src }}"
+    dest: "{{ item.dest }}"
+    owner: true
+    group: true
+    recursive: true
+    delete: true
+  loop: "{{ vault2host }}"
+  when: vault_path != ""

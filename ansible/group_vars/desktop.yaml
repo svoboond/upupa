@@ -23,6 +23,7 @@ pacman_packages:
 - ranger
 - yay
 - ansible
+- rsync
 # desktop applications
 - firefox
 - vlc
@@ -78,7 +79,7 @@ symlinks:
 - src: "{{ lookup('env', 'PWD') }}/dotfiles/.gitignore_global"
   dest: ~/.gitignore_global
 
-private_host2vault:
+host2vault:
 - src: ~/.gnupg
   dest: ""
 - src: ~/.ssh
@@ -87,3 +88,13 @@ private_host2vault:
   dest: ""
 - src: ~/.thunderbird
   dest: ""
+
+vault2host:
+- src: .gnupg
+  dest: "~"
+- src: .ssh
+  dest: "~"
+- src: .kube
+  dest: "~"
+- src: .thunderbird
+  dest: "~"

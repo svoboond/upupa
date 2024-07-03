@@ -3,7 +3,7 @@
   ansible.builtin.fail:
     msg: variable vault_path is required
   when: vault_path == ""
-- name: copy from host to vault
+- name: copy host to vault
   become: true
   ansible.posix.synchronize:
     src: "{{ item.src }}"
@@ -12,5 +12,5 @@
     group: true
     recursive: true
     delete: true
-  loop: "{{ private_host2vault }}"
+  loop: "{{ host2vault }}"
   when: vault_path != ""

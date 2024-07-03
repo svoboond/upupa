@@ -9,5 +9,7 @@
     tags: symlinks
   - role: private_host2vault
     tags: host2vault
+  - role: private_vault2host
+    tags: vault2host
   vars_files:
   - group_vars/desktop.yaml
