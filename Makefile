@@ -1,19 +1,19 @@
-.PHONY: ansible-all ansible-host2vault ansible-install ansible-upgrade ansible-symlinks ansible-vault2host
+.PHONY: all host2vault install upgrade symlinks vault2host
 
-ansible-all:
+all:
 	ansible-playbook -i ansible/inventory/desktop.yaml ansible/desktop.yaml -vvvvv
 
-ansible-host2vault:
+host2vault:
 	ansible-playbook -i ansible/inventory/desktop.yaml ansible/desktop.yaml -vvvvv --tag host2vault --extra-vars "vault_path=${VAULT_PATH}"
 
-ansible-install:
+install:
 	ansible-playbook -i ansible/inventory/desktop.yaml ansible/desktop.yaml -vvvvv --tag install
 
-ansible-upgrade:
+upgrade:
 	ansible-playbook -i ansible/inventory/desktop.yaml ansible/desktop.yaml -vvvvv --tag upgrade
 
-ansible-symlinks:
+symlinks:
 	ansible-playbook -i ansible/inventory/desktop.yaml ansible/desktop.yaml -vvvvv --tag symlinks
 
-ansible-vault2host:
+vault2host:
 	ansible-playbook -i ansible/inventory/desktop.yaml ansible/desktop.yaml -vvvvv --tag vault2host --extra-vars "vault_path=${VAULT_PATH}"
