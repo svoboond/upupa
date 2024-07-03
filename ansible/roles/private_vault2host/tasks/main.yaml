@@ -7,7 +7,7 @@
   become: true
   ansible.posix.synchronize:
     src: "{{ item.dest }}/{{ item.src }}"
-    dest: "{{ item.dest }}/.vault2host.bak"
+    dest: "{{ item.dest }}/.upupa-vault2host-bak"
     owner: true
     group: true
     recursive: true
