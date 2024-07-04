@@ -51,6 +51,8 @@ pacman_packages:
 - neovim
 - ripgrep
 - fd
+# Gnome
+- gnome-tweaks
 
 aur_packages:
 - skaffold-bin
