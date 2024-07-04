@@ -23,6 +23,7 @@ pacman_packages:
 - ranger
 - yay
 - ansible
+- wireguard-tools
 - rsync
 # desktop applications
 - firefox
