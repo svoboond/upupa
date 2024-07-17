@@ -48,7 +48,7 @@ set tabstop=4
 set softtabstop=0
 " governs indentation via >> and friends
 set shiftwidth=4
-set colorcolumn=99
+set colorcolumn=88
 
 " line endings
 set fileformat=unix
