@@ -5,9 +5,7 @@
     use: yay
     aur_only: yes
 - name: update flatpak packages
-  community.general.flatpak:
-    name: "{{ flatpak_packages }}"
-    state: latest
+  ansible.builtin.command: flatpak update --noninteractive
 - name: run "pacman -Syu"
   become: true
   community.general.pacman:
