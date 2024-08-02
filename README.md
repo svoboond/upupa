@@ -4,8 +4,9 @@ Personal dotfiles and system maintenance.
 ### Install
 1. project setup
    - `echo "$(whoami) ALL=(ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/$(whoami)`
-   - `sudo pacman -S --needed git ansible rsync`
-   - `mkdir ~/svoboond/github && cd ~/svoboond/github && git clone https://github.com/svoboond/upupa.git && cd upupa`
+   - `sudo pacman -Syu --noconfirm`
+   - `sudo pacman -S --needed --noconfirm git ansible rsync`
+   - `mkdir -p ~/svoboond/github && cd ~/svoboond/github && git clone https://github.com/svoboond/upupa.git && cd upupa`
 2. install packages
    - `make install`
 3. system settings
