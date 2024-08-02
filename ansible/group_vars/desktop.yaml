@@ -51,6 +51,7 @@ pacman_packages:
 - neovim
 - ripgrep
 - fd
+- npm
 # Gnome
 - gnome-tweaks
 
