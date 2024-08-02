@@ -21,8 +21,17 @@ Personal dotfiles and system maintenance.
    - `VAULT_PATH=<vault_path> make vault2host`
    - from vault
      - `sudo cp -rp Pictures/* ~/Pictures && sudo chown -R $(whoami):$(whoami) ~/Pictures`
+   - use ssh for current project
+     - `git config url.ssh://git@github.com/.insteadOf https://github.com/`
    - follow sub `README.md` files
-6. Gnome settings
+6. make symblic links
+   - `make symlinks`
+7. Neovim
+   - `nvim`
+     - `:PlugInstall`
+     - `:PlugUpdate`
+     - `:PlugUpgrade`
+7. Gnome settings
    - Settings
      - -> Keyboard -> Input Sources - Add Input Source
      - -> Mouse & Touchpad -> Mouse -> Pointer Speed
@@ -32,7 +41,7 @@ Personal dotfiles and system maintenance.
      - -> Appearance -> Background -> Default Image
    - Dock
      - Firefox, Kitty, Thunderbird, Webcord
-7. Firefox
+8. Firefox
    - login
    - sync
      - Bookmarks
@@ -44,7 +53,7 @@ Personal dotfiles and system maintenance.
      - SearXNG
    - show bookmarks toolbar
      - https://support.mozilla.org/en-US/kb/bookmarks-toolbar-display-favorite-websites
-8. NVIDIA
+9. NVIDIA
    - check installed drivers
      - `inxi -G`
    - https://wiki.archlinux.org/title/NVIDIA
