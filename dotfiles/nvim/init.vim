@@ -3,6 +3,7 @@ call plug#begin()
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-eunuch'
 
 Plug 'ntpeters/vim-better-whitespace'
 
