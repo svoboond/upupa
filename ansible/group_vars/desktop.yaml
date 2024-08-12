@@ -19,6 +19,7 @@ pacman_packages:
 - openssh
 - sudo
 - pipewire
+- lshw
 - kitty
 - ranger
 - yay
