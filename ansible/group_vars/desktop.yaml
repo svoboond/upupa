@@ -60,6 +60,7 @@ aur_packages:
 - skaffold-bin
 - kafkacat-git
 - neovim-plug
+- waypipe
 
 flatpak_packages:
 - io.github.spacingbat3.webcord
