@@ -11,7 +11,7 @@ end)
 -- read this: https://github.com/VonHeikemen/lsp-zero.nvim/blob/v3.x/doc/md/guide/integrate-with-mason-nvim.md
 require('mason').setup({})
 require('mason-lspconfig').setup({
-	ensure_installed = { 'vimls', 'gopls', 'ruff', 'pylsp', 'yamlls', 'lua_ls', 'helm_ls', 'sqlls', 'templ' },
+	ensure_installed = { 'vimls', 'gopls', 'ruff', 'pylsp', 'yamlls', 'lua_ls', 'helm_ls', 'sqlls', 'templ', 'taplo' },
 	handlers = {
 		-- this first function is the "default handler"
 		-- it applies to every language server without a "custom handler"
