@@ -17,3 +17,5 @@ alias wgd="sudo wg-quick down wg0"
 alias pyvenv-create="python -m venv venv"
 alias pyvenv-activate="source venv/bin/activate"
 alias pypip-install-requirements="pip install -Ur requirements.txt"
+
+[[ -f ~/.bashrc_addl ]] && . ~/.bashrc_addl

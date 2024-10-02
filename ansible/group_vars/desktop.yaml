@@ -78,6 +78,8 @@ symlinks:
   dest: ~/.bash_profile
 - src: "{{ lookup('env', 'PWD') }}/dotfiles/.bashrc"
   dest: ~/.bashrc
+- src: "{{ lookup('env', 'PWD') }}/dotfiles/.bashrc_addl"
+  dest: ~/.bashrc_addl
 - src: "{{ lookup('env', 'PWD') }}/dotfiles/.inputrc"
   dest: ~/.inputrc
 - src: "{{ lookup('env', 'PWD') }}/dotfiles/.profile"
