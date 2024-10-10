@@ -18,4 +18,7 @@ alias pyvenv-create="python -m venv venv"
 alias pyvenv-activate="source venv/bin/activate"
 alias pypip-install-requirements="pip install -Ur requirements.txt"
 
+# Go
+export PATH="$HOME/go/bin:$PATH"
+
 [[ -f ~/.bashrc_addl ]] && . ~/.bashrc_addl
