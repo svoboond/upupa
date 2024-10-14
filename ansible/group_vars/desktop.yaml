@@ -64,6 +64,7 @@ aur_packages:
 
 flatpak_packages:
 - io.github.spacingbat3.webcord
+- dev.vencord.Vesktop
 
 symlinks:
 - src: "{{ lookup('env', 'PWD') }}/dotfiles/kitty"
