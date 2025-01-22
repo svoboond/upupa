@@ -58,7 +58,7 @@ pacman_packages:
 
 aur_packages:
 - skaffold-bin
-- kafkacat-git
+- kcat-cli
 - neovim-plug
 - waypipe
 
