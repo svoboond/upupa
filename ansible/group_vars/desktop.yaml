@@ -21,7 +21,7 @@ pacman_packages:
 - pipewire
 - lshw
 - kitty
-- ranger
+- lf
 - yay
 - ansible
 - wireguard-tools
