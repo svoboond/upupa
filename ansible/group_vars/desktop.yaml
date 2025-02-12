@@ -48,6 +48,7 @@ pacman_packages:
 # Go
 - go
 - gopls
+- gofumpt
 # Neovim
 - neovim
 - ripgrep
