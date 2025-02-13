@@ -13,6 +13,13 @@ alias gf="git fetch --all"
 alias wgu="sudo wg-quick up wg0"
 alias wgd="sudo wg-quick down wg0"
 
+# kubectl
+source <(kubectl completion bash)
+alias k=kubectl
+complete -o default -F __start_kubectl k
+alias kgp="kubectl get po"
+alias kgn="kubectl get ns"
+
 # Python
 alias pyvenv-create="python -m venv venv"
 alias pyvenv-activate="source venv/bin/activate"
