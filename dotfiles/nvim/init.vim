@@ -44,11 +44,11 @@ filetype indent on
 " do not expand tab to spaces
 set noexpandtab
 " how long each tabstop will appear
-set tabstop=4
+set tabstop=8
 " amount of whitespace to be inserted/removed when the tab/backspace is pressed
 set softtabstop=0
 " governs indentation via >> and friends
-set shiftwidth=4
+set shiftwidth=8
 set colorcolumn=88
 
 " line endings
