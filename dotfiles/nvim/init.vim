@@ -13,19 +13,10 @@ Plug 'nvim-lualine/lualine.nvim'
 
 Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
-
 Plug 'neovim/nvim-lspconfig'
-Plug 'hrsh7th/nvim-cmp'
-Plug 'hrsh7th/cmp-nvim-lsp'
-Plug 'L3MON4D3/LuaSnip'
-
-Plug 'VonHeikemen/lsp-zero.nvim', {'branch': 'v3.x'}
-
-Plug 'WhoIsSethDaniel/toggle-lsp-diagnostics.nvim'
 
 " requires ripgrep and fd
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.x' }
 
@@ -86,7 +77,7 @@ let mapleader = ";"
 " list and go to buffer
 nnoremap gb :buffers<CR>:buffer<Space>
 " delete buffer
-nnoremap bd :bdelete<CR>
+nnoremap <leader>db :bdelete<CR>
 " replace inner word and do not update current register
 nmap <silent> cp "_ciw<C-R>"<Esc>
 " replace inner Word and do not update current register
@@ -95,9 +86,6 @@ nmap <silent> cP "_ciW<C-R>"<Esc>
 " --- insert mode
 " delete
 inoremap <C-d> <Del>
-" show omni completion
-inoremap <C-Space> <C-x><C-o>
-
 
 " --- command-line
 " start of line
@@ -118,10 +106,6 @@ cnoremap <C-p> <Up>
 cnoremap <M-b> <S-Left>
 " forward one word
 cnoremap <M-f> <S-Right>
-
-" -----------------------------------------------------------------------------
-" WhoIsSethDaniel/toggle-lsp-diagnostics.nvim
-nmap <F6> <Plug>(toggle-lsp-diag)
 
 " -----------------------------------------------------------------------------
 " ntpeters/vim-better-whitespace
