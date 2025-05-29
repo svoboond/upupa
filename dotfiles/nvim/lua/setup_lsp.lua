@@ -8,6 +8,9 @@ vim.keymap.set('n', '<F3>', function()
 	vim.lsp.buf.format()
 end, { silent = true, noremap = true })
 
+-- type definition shortcut
+vim.keymap.set('n', 'gD', vim.lsp.buf.type_definition)
+
 -- diagnostics
 vim.diagnostic.config({
 	virtual_text = true,
