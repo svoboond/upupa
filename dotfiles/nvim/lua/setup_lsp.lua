@@ -20,6 +20,7 @@ vim.diagnostic.config({
 	},
 
 })
+vim.keymap.set('n', 'gl', vim.diagnostic.open_float)
 
 -- enable completion
 vim.api.nvim_create_autocmd('LspAttach', {
