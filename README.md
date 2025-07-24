@@ -25,7 +25,7 @@ Personal dotfiles and system maintenance.
    - use ssh for current project
      - `git config url.ssh://git@github.com/.insteadOf https://github.com/`
    - follow sub `README.md` files
-6. make symblic links
+6. make symbolic links
    - `make symlinks`
 7. Neovim
    - `nvim`
@@ -41,7 +41,7 @@ Personal dotfiles and system maintenance.
      - -> Keyboard -> Additional Layout options -> Caps Lock Behaviour -> Make Caps Lock an additional Esc, but Shift + Caps Lock is the regular Caps Lock
      - -> Appearance -> Background -> Default Image
    - Dock
-     - Firefox, Kitty, Thunderbird, Webcord
+     - Firefox, Kitty, Thunderbird, Microsoft Teams for Linux, Vesktop
 8. Firefox
    - login
    - sync
@@ -51,7 +51,7 @@ Personal dotfiles and system maintenance.
      - Settings
    - make default
    - set default search engine
-     - SearXNG
+     - DuckDuckGo or SearXNG
    - show bookmarks toolbar
      - https://support.mozilla.org/en-US/kb/bookmarks-toolbar-display-favorite-websites
 9. NVIDIA
