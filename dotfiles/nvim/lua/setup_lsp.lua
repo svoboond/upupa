@@ -44,6 +44,7 @@ require('mason').setup({})
 -- mason-lspconfig
 require('mason-lspconfig').setup({
 	ensure_installed = {
+		'bashls',
 		'vimls',
 		'gopls',
 		'ruff',
@@ -53,5 +54,6 @@ require('mason-lspconfig').setup({
 		'helm_ls',
 		'sqlls',
 		'templ',
-		'taplo' },
+		'taplo',
+	},
 })
