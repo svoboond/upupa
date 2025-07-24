@@ -62,6 +62,7 @@ aur_packages:
 - kcat-cli
 - neovim-plug
 - waypipe
+- teams-for-linux
 
 flatpak_packages:
 - io.github.spacingbat3.webcord
