@@ -65,7 +65,6 @@ aur_packages:
 - teams-for-linux
 
 flatpak_packages:
-- io.github.spacingbat3.webcord
 - dev.vencord.Vesktop
 
 symlinks:
