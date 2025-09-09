@@ -61,6 +61,7 @@ aur_packages:
 - skaffold-bin
 - kcat-cli
 - neovim-plug
+- gocomplete
 - waypipe
 - teams-for-linux
 
