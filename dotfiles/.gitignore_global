@@ -3,7 +3,7 @@ bar.*
 foo.*
 hey.*
 # testing dir
-/foo_bar_hey/
+/.foobarhey/
 
 # Python
 __pycache__/
