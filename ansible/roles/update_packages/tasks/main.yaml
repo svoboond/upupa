@@ -2,4 +2,4 @@
 - name: install requirements
   delegate_to: localhost
   ansible.builtin.command: ansible-galaxy collection install -r {{ role_path }}/meta/requirements.yaml
-- ansible.builtin.include_tasks: upgrade.yaml
+- ansible.builtin.include_tasks: update.yaml

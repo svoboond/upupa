@@ -1,4 +1,4 @@
-- name: upgrade AUR packages
+- name: update AUR packages
   kewlfft.aur.aur:
     update_cache: yes
     upgrade: yes

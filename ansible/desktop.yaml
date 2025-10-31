@@ -3,8 +3,8 @@
   roles:
   - role: install_packages
     tags: install
-  - role: upgrade_packages
-    tags: upgrade
+  - role: update_packages
+    tags: update
   - role: create_symlinks
     tags: symlinks
   - role: private_host2vault

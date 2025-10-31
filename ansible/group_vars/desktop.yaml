@@ -49,7 +49,7 @@ pacman_packages:
 - go
 - gopls
 - gofumpt
-- golangci-lint
+- golangci-lint-bin
 # Neovim
 - neovim
 - ripgrep
@@ -64,10 +64,10 @@ aur_packages:
 - neovim-plug
 - gocomplete
 - waypipe
-- teams-for-linux
 
 flatpak_packages:
 - dev.vencord.Vesktop
+- com.github.IsmaelMartinez.teams_for_linux
 
 symlinks:
 - src: "{{ lookup('env', 'PWD') }}/dotfiles/kitty"
