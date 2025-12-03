@@ -41,6 +41,7 @@ pacman_packages:
 # K8s
 - kubectl
 - helm
+- skaffold
 - minikube
 # Python
 - python
@@ -59,7 +60,6 @@ pacman_packages:
 - gnome-tweaks
 
 aur_packages:
-- skaffold-bin
 - kcat-cli
 - neovim-plug
 - gocomplete
