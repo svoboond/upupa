@@ -27,5 +27,6 @@ alias pypip-install-requirements="pip install -Ur requirements.txt"
 
 # Go
 export PATH="$HOME/go/bin:$PATH"
+export GOEXPERIMENT=jsonv2
 
 [[ -f ~/.bashrc_addl ]] && . ~/.bashrc_addl
