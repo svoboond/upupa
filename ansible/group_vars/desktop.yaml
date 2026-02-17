@@ -51,7 +51,6 @@ pacman_packages:
 - go
 - gopls
 - gofumpt
-- golangci-lint-bin
 # Neovim
 - neovim
 - ripgrep
