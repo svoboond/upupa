@@ -29,6 +29,7 @@ pacman_packages:
 # desktop applications
 - firefox
 - vlc
+- vlc-plugins-all
 - thunderbird
 - libreoffice-still
 - chromium
