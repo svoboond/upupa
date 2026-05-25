@@ -1,8 +1,7 @@
 return {
-	on_init = function(client)
+	on_attach = function(client, bufnr)
 		client.server_capabilities.documentFormattingProvider = false
 		client.server_capabilities.documentFormattingRangeProvider = false
-		client.server_capabilities.diagnosticProvider = false
 	end,
 	settings = {
 		pylsp = {
