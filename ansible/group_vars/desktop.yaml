@@ -18,6 +18,7 @@ pacman_packages:
 - ltrace
 - openssh
 - sudo
+- ncdu
 - pipewire
 - lshw
 - kitty
