@@ -63,8 +63,6 @@ pacman_packages:
 aur_packages:
 - kcat-cli
 - neovim-plug
-- gocomplete
-- waypipe
 
 flatpak_packages:
 - dev.vencord.Vesktop
